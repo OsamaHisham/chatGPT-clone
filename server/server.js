@@ -24,11 +24,11 @@ app.use(express.json());
 
 // Creating a dummy root route using an async Function
 // Can't recive a lot of data from the frontend
-// app.get('/', async (req, res) => {
-//   res.status(200).send({
-//     message: 'Hello From KidoCode intern Osama Hisham :)',
-//   })
-// });
+app.get('/', async (req, res) => {
+  res.status(200).send({
+    message: 'Hello From KidoCode intern Osama Hisham :)',
+  })
+});
 
 // post request is used to get data from the body of the frontend request
 app.post('/', async (req, res) => {
